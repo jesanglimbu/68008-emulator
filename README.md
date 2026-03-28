@@ -1,0 +1,5 @@
+# Introduction
+
+I took a module in my course about computer systems and we dove into CPU architecture. We specifically looked at the 68008 CPU architecture and it got me interested in the implementation so I decided to try and make an emulator of the architecture.
+
+I have made it a non-negotiable that I do NOT use any generative AI to produce any functional code. The usage of AI has been severely limited and is only used for things such as generating a makefile to compile my code, providing a clear structure of the project and decisions on minor design like the names of variables, modules, and methods. The reason for this is so I can focus on the implementation and how each module connects with one another whilst not tripping up on how I should go about compiling or structuring the project.
