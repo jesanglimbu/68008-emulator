@@ -1,6 +1,8 @@
 #ifndef _MEMORY_H_
 #define _MEMORY_H_
 
+#include <stdint.h>
+
 #define MEMORY_SIZE (1 << 20)
 
 typedef struct memory memory_t;
