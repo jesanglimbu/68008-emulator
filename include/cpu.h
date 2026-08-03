@@ -1,16 +1,26 @@
-#ifndef _CPU_H
+#ifndef _CPU_H_
 #define _CPU_H_
 
 #include "memory.h"
-#include <stdint.h>
 
 #define NUM_DATA_REGS 8
 #define NUM_ADDR_REGS 8
 
-typedef struct cpu cpu_t;
+typedef struct {
+    uint32_t data_reg[NUM_DATA_REGS];
+    uint32_t addr_reg[NUM_ADDR_REGS];
 
-void cpu_init(cpu_t *cpu);
+    uint16_t ccr;
+    uint16_t alu;
 
-void cpu_run(cpu_t *cpu);
+    uint32_t pc;
+    uint32_t mar;
+    uint32_t mdr;
+    uint32_t ir;
+} CPU;
+
+void cpu_init(CPU *cpu);
+
+void cpu_print_registers(CPU *cpu);
 
 #endif
